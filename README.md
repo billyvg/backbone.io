@@ -3,7 +3,7 @@ Just an experiment with Backbone.js and Socket.io on both, client and server.  N
 
 
 ## Example Usage ##
-An example usage of backboneio...
+An example usage of backboneio... (not complete, but I think you can kind of get an idea where I'm going with this)
 
 ### Client ####
 ```coffee
@@ -21,7 +21,6 @@ class AppView extends Backboneio.View
     @emit 'auth', sessionkey: $.cookie('session')
 
   news: (data) ->
-    #$('#chat-box .listview').append '<p>' + data + '</p>'
     console.log 'news: ', data
 
 class ChatView extends Backboneio.View
